@@ -1,0 +1,22 @@
+.input-group {
+    
+    margin: auto;
+    width: 75vw;
+}
+
+#custom-css {
+    padding: 20px;
+    background-color: cornflowerblue;
+    margin-top: 40vh;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.btn {
+    background-color: rgb(122, 127, 133);
+    color: white;
+    width: 50vw;
+    border-radius: 5px;
+    /* border-top-left-radius: 0; */
+}
+
