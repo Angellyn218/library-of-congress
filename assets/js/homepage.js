@@ -21,8 +21,10 @@ $('.btn').on('click', function () {
                     console.log('test log');
                     // fuctiong to get search result
                     // 
-                    displayResults(data);
                     localStorage.setItem('search', JSON.stringify(data))
+                    // document.location.replace('./search-results.html?q=sometingelsecanbeputinhere');
+                    document.location.replace('./search-results.html');
+
                 });
 
                 
@@ -62,5 +64,5 @@ var displayResults = function (data) {
         searchResultEl.append(resultEl);
         
     }
-    document.location.replace('./search-results.html');
+    // location.location.replace('./search-results.html');
 }
