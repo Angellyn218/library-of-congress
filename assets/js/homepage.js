@@ -22,7 +22,12 @@ $('.btn').on('click', function () {
                     // fuctiong to get search result
                     // 
                     displayResults(data);
+                    localStorage.setItem('search', JSON.stringify(data))
                 });
+
+                
+                // displayResults(data);
+
             } else {
                 alert('Error', response.statusText);
             }
@@ -31,9 +36,12 @@ $('.btn').on('click', function () {
             console.log('something went wrong')
         });
 
+    
+
 });
 
 var displayResults = function (data) {
+    // window.location.replace('./search-results.html');
     console.log(data);
     if (data.length === 0) {
         console.log('if block');
@@ -50,8 +58,9 @@ var displayResults = function (data) {
         
         resultEl.text(resultHeader);
 
+        $('#resultspage').append(resultEl);
         searchResultEl.append(resultEl);
+        
     }
-
-
+    document.location.replace('./search-results.html');
 }
