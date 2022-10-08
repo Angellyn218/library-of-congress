@@ -1,0 +1,9 @@
+html,
+body {
+  height: 100%;
+}
+
+.card {
+  background-color: #d9e8e8;
+  color: black;
+}
